@@ -1,0 +1,29 @@
+Q: What is your return policy?
+A: We accept returns within 30 days of purchase. Items must be unused and in original packaging.
+
+Q: How long does shipping take?
+A: Standard shipping takes 3-5 business days. Express shipping takes 1-2 business days.
+
+Q: How much does shipping cost?
+A: Standard shipping is free for orders above $50. Below $50, shipping costs $5.99.
+
+Q: How do I track my order?
+A: Once your order is shipped, you will receive a tracking link via email within 24 hours.
+
+Q: What payment methods do you accept?
+A: We accept Visa, Mastercard, American Express, PayPal, and UPI.
+
+Q: Can I cancel my order?
+A: Orders can be cancelled within 2 hours of placing them. After that, they cannot be cancelled.
+
+Q: What if I receive a damaged product?
+A: Please take a photo and contact us at support@shopease.com within 48 hours of delivery.
+
+Q: Do you ship internationally?
+A: Currently we only ship within India. International shipping will be available soon.
+
+Q: How do I contact customer support?
+A: You can reach us at support@shopease.com or call us at 1800-123-4567 between 9am-6pm IST.
+
+Q: Do you offer gift wrapping?
+A: Yes! Gift wrapping is available for $2.99 per item at checkout.
