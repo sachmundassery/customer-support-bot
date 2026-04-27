@@ -9,10 +9,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-'''
-Loads the chroma_db/ folder we created with ingest.py
-@st.cache_resource means — load this once and reuse it. Don't reload every time the user sends a message. Makes it fast.
-'''
 @st.cache_resource
 def load_db():
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
@@ -22,25 +18,6 @@ def load_db():
     )
     return db
 
-'''
-This is the heart of the bot. Let me explain each piece:
-
-retriever — searches ChromaDB and fetches top 3 most relevant FAQ chunks for any question
-prompt — the instructions we give to Groq. We tell it to ONLY answer from the context — this stops it from making things up
-RunnablePassthrough() — just passes the user's question through as-is
-chain = retriever | prompt | llm | StrOutputParser() — this is the pipeline:
-
-User question
-     ↓
-retriever finds relevant FAQ chunks
-     ↓
-prompt combines chunks + question into one message
-     ↓
-llm (Groq) generates the answer
-     ↓
-StrOutputParser converts it to plain text string
-
-'''
 
 @st.cache_resource
 def load_chain():
@@ -69,11 +46,6 @@ def load_chain():
 
 # --- Streamlit UI ---
 
-'''
-st.title and st.caption — the heading and subtitle you see on screen
-st.session_state.messages — this is how Streamlit remembers chat history. Every time the page refreshes, this keeps the conversation intact
-The for loop — rerenders all previous messages so the chat history stays visible
-'''
 st.title("🛍️ ShopEase Customer Support")
 st.caption("Ask me anything about orders, shipping, returns and more!")
 
